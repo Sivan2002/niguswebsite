@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #55ffe5;
+    font-size: 14px;
+    font-family: poppins;
+}
+.contact{
+    width: 80%;
+    margin: 50px auto;
+}
+.contactbox{
+    background: #fff;
+    display: flex;
+}
+.contactleft{
+    flex-basis: 40%;
+    padding: 40px 60px;
+}
+.contactright{
+    flex-basis: 60%;
+    padding: 40px;
+    background: #1c00b5;
+    color: white;
+    min-width: none;
+
+}
+h1{
+    margin-bottom: 10px;
+}
+.contact p{
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+.inputrow{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.inputgrp{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+#Send{
+    background: #1c00b5;    
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 35px;
+    color: #fff;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+.contactleft h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contactright h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+tr td:first-child{
+   padding-right: 20px; 
+}
+tr td{
+    padding-top: 20px;
+}
+@media only screen and (max-width: 600px){
+    .contact,.contactright{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .contactbox{
+        flex-basis: 100%;
+    }
+    .contactleft{
+        display: none;
+    }
+}

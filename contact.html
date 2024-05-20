@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact -Farmconnect</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/unnamed.png" width="150px" height="75px">
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Web Development</a></li>
+                    <li><a href="softwaredevelopment.html">Software Development</a></li>
+                    <li><a href="systemintegration.html">System Integration</a></li>
+                    <li><a href="contact.html">About</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png.png" class="menuicon" onclick="menuicon()">
+
+        </div>
+
+    <div class="contact">
+        <h1>Connect With Us</h1>
+        <p>We would love to respond to your queries and help you. <br> Feel free to get
+            in touch with us. </p>
+        
+        <div class="contactbox">
+            <div class="contactleft">
+                <h3>Send your request</h3>
+                <form>
+                    <div class="inputrow">
+                        <div class="inputgrp">
+                            <label>Name</label>
+                            <input type="text"  required>
+                        </div>
+                        <div class="inputgrp">
+                            <label>Phone</label>
+                            <input type="number"  required>
+                        </div>
+                    </div>
+                    <div class="inputrow">
+                        <div class="inputgrp">
+                            <label>Email</label>
+                            <input type="Email"  required>
+                        </div>
+                        <div class="inputgrp">
+                            <label>Subject</label>
+                            <input type="text" >
+                        </div>
+                    </div>
+                    <label> Message </label>
+                    <textarea rows="5" placeholder="Your Message" maxlength="240" required></textarea>
+
+                    <button type="submit" id="Send">Send</button>
+                </form>
+            </div>
+            <div class="contactright">
+                <h3>Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td>sales@nigussytems.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td>+91 98806 98312</td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td>Portstay Technologies Pvt Ltd
+                            No.8, 2nd Floor, 20th Main, 5th Block
+                            Koramangala, Bangalore-560095.</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="end">
+        <div class="container">
+         <div class="col_3" style="margin-top: 30px;">
+      
+              <img style="width: 150px; height: 80px;"  src="images/unnamed.png">
+              <br>
+              <h4>Nigus Systems Private Limited.</h4>
+              <p>We work across 24 x 7 to help you run your business without any hassle</p>
+              <i><a class="fa fa-linkedin-square" style="font-size: 34px; color: rgb(17, 17, 117);" href="https://in.linkedin.com/company/nigus-systems"></a></i>
+              <p>	&#169; 2024 Nigus Systems Pvt Ltd.
+                <br><br>
+                Designed by Santhosh Sivan B.E CSE.
+              </p>
+         </div>
+        </div>
+       </div>
+        <!-- javascript for menu items -->
+ <script>
+    var Menuitems = document.getElementById("menuitems");
+    Menuitems.style.maxHeight = "0px";
+
+    function menuicon(){
+        if (Menuitems.style.maxHeight == "0px")
+        {
+            Menuitems.style.maxHeight = "200px"
+        }
+        else{
+            Menuitems.style.maxHeight = "0px"
+        }
+
+    }
+ </script>
+
+</body>
+</html>
